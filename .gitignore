@@ -2,3 +2,4 @@ templates
 .idea
 __pycache__
 res
+.DS_Store
