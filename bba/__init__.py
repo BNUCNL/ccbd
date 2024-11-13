@@ -1,4 +1,8 @@
 # bba/__init__.py
 
-from .config_generator import get_supported_models, generate_model_config
-from .model_runner import load_config, create_model_from_config
+# 导入包中的核心类和方法
+from .config import ConfigManager
+from .model_pipeline import BrainBehaviorModel
+
+# 定义包的公共接口
+__all__ = ["ConfigManager", "BrainBehaviorModel"]
