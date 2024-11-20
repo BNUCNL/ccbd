@@ -159,3 +159,6 @@ def concatenate_brain_input(exist_subject, all_subject_brain_file_path):
 sub_all_list = pd.read_csv("/nfs/z1/zhenlab/CCBD/brain_behavior_association_tools/data/test_myelin_data.csv")["subject"].tolist()
 sub_check2 = check_brain_input(sub_all_list,"/nfs/z1/zhenlab/CCBD/brain_behavior_association_tools/data/test_myelin_data.csv")
 matrix = concatenate_brain_input(sub_check2[0],"/nfs/z1/zhenlab/CCBD/brain_behavior_association_tools/data/test_myelin_data.csv")
+
+
+
