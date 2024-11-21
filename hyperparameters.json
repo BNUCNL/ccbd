@@ -1,11 +1,20 @@
 {
-    "cifti_template": "/Users/starvir/workdir/project/bba/templates/Yeo_7Network.dscalar.nii",
-    "output_path": "/Users/starvir/workdir/project/bba/res/res.dscalar.nii",
+    "template_path": "./brain_atlas/glasser_360rois_lh.nii.gz",
+    "output_path": "./res/res.nii.gz",
+    "data_type": "nifti",
+    "data_level": "voxel",
     "model_name": "LinearRegression",
     "parameters": {
         "fit_intercept": true,
         "copy_X": true,
         "n_jobs": null,
         "positive": false
+    },
+    "preprocessing": {
+        "z_score": false,
+        "pca": {
+            "enabled": false,
+            "n_components": 100
+        }
     }
 }
